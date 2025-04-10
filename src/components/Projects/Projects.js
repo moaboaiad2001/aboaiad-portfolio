@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import mosRetroShirts from "../../Assets/Projects/mosRetroShirts.png";
 import stockMarketApp from "../../Assets/Projects/stockMarketApp.png";
 import myPortfolio from "../../Assets/Projects/myPortfolio.png";
+import tradingPlatform from "../../Assets/Projects/tradingPlatform.png";
 
 
 function Projects() {
@@ -19,6 +20,14 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card portfolio-project">
+            <ProjectCard
+              imgPath={tradingPlatform}
+              isBlog={false}
+              title="Web Trading Platform"
+              description="Developing a modern trading platform using TypeScript and JSX (TSX), with a focus on performance, scalability, and user experience. Integrated REST APIs to fetch real-time stock data and handle backend operations such as user authentication, order execution, and portfolio management. The platform features a responsive interface, dynamic data visualizations, and secure communication between frontend and backend services."
+            />
+          </Col>
           <Col md={4} className="project-card portfolio-project">
             <ProjectCard
               imgPath={myPortfolio}
